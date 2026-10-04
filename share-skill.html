@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f8f5">
+    <meta name="description" content="Create your Campus SkillSwap profile and share what you know with fellow students.">
+    <title>Share a skill — Campus SkillSwap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="share-profile-page">
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Campus SkillSwap home">
+                <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+                <span>Campus <strong>SkillSwap</strong></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="skills.html">Explore skills</a>
+                <a href="index.html#how-it-works">How it works</a>
+                <a class="nav-cta" href="share-skill.html" aria-current="page">Share a skill <span aria-hidden="true">↗</span></a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="share-profile-main">
+        <section class="share-profile-intro container">
+            <p class="eyebrow"><span class="live-dot"></span> YOUR KNOW-HOW BELONGS HERE</p>
+            <h1>Make room for a <span>skill swap.</span></h1>
+            <p>Share what you know, say what you’d like to learn, and meet someone from your campus.</p>
+        </section>
+
+        <section class="profile-form-wrap container" aria-labelledby="profile-form-title">
+            <form class="profile-form" id="profile-form">
+                <div class="profile-form-heading">
+                    <div><p class="eyebrow">A FEW DETAILS TO GET STARTED</p><h2 id="profile-form-title">Create your student profile</h2></div>
+                    <span class="required-note">* Required</span>
+                </div>
+                <div class="profile-fields">
+                    <div class="profile-field">
+                        <label for="full-name">Full name <span>*</span></label>
+                        <input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="e.g. Jamie Lee" maxlength="80" required>
+                    </div>
+                    <div class="profile-field">
+                        <label for="course-year">Course / year <span>*</span></label>
+                        <input id="course-year" name="courseYear" type="text" placeholder="e.g. Psychology · 2nd year" maxlength="100" required>
+                    </div>
+                    <div class="profile-field profile-field-wide">
+                        <label for="skills-teach">Skills I can teach <span>*</span></label>
+                        <input id="skills-teach" name="skillsTeach" type="text" placeholder="e.g. Python, Canva, public speaking" maxlength="180" required>
+                        <small>Separate each skill with a comma.</small>
+                    </div>
+                    <div class="profile-field profile-field-wide">
+                        <label for="skills-learn">Skills I want to learn <span>*</span></label>
+                        <input id="skills-learn" name="skillsLearn" type="text" placeholder="e.g. UI / UX, photography" maxlength="180" required>
+                        <small>Separate each skill with a comma.</small>
+                    </div>
+                    <div class="profile-field profile-field-wide">
+                        <label for="short-bio">Short bio <span>*</span></label>
+                        <textarea id="short-bio" name="bio" rows="4" maxlength="350" placeholder="A few words about you and how you like to learn or teach." required></textarea>
+                        <small class="character-hint">Keep it friendly and under 350 characters.</small>
+                    </div>
+                    <div class="profile-field profile-field-wide">
+                        <label for="interests">Interests <span>*</span></label>
+                        <input id="interests" name="interests" type="text" placeholder="e.g. Film club, hiking, illustration" maxlength="180" required>
+                        <small>Share a few things you enjoy, separated by commas.</small>
+                    </div>
+                </div>
+                <p class="storage-note"><span aria-hidden="true">✳</span> Your profile is saved in this browser only. No account or backend needed.</p>
+                <button class="button button-primary create-profile-button" type="submit">Create My Profile <span aria-hidden="true">↗</span></button>
+                <p class="profile-form-message" id="profile-form-message" role="status" aria-live="polite"></p>
+                <a class="profile-browse-link" id="browse-profiles-link" href="skills.html" hidden>Browse the skill directory <span aria-hidden="true">↗</span></a>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span>Campus <strong>SkillSwap</strong></span></a>
+            <p>Good things happen when we share. <span>Made for campus, by campus.</span></p>
+            <a class="back-to-top" href="skills.html">Browse skills ↗</a>
+        </div>
+    </footer>
+</body>
+</html>
